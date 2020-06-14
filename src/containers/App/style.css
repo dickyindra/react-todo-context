@@ -9,10 +9,18 @@ body {
 
 .App {
   max-width: 480px;
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
 
   margin-left: auto;
   margin-right: auto;
 
   background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  border-radius: 10px;
+
+  overflow: hidden;
 }
