@@ -1,18 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
 
 import "./style.css";
 import check from "./check.svg";
 
-const TodoList = ({ task }) => {
-  const [isCheck, setCheck] = useState(false);
-
+const TodoList = ({ task, checked: isCheck, setChecked }) => {
   return (
     <div className="todo-list">
       <div>
         <div
           className={classNames("todo-checklist", { checked: isCheck })}
-          onClick={() => setCheck(true)}
+          onClick={setChecked}
         >
           <img src={check} alt="check" />
         </div>

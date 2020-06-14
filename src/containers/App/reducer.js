@@ -1,3 +1,5 @@
+import { TODO_CHECK } from "./constants";
+
 export const initialState = {
   todos: [
     {
@@ -15,10 +17,18 @@ export const initialState = {
   ],
 };
 
-const todoReducer = (state, { type }) => {
+const todoReducer = (state, { type, payload }) => {
   switch (type) {
+    case TODO_CHECK:
+      const todos = state.todos;
+      todos[payload.id].checked = true;
+
+      return {
+        ...state,
+        todos: todos,
+      };
     default:
-      break;
+      return state;
   }
 };
 
