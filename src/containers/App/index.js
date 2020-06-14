@@ -15,8 +15,8 @@ const App = () => {
       <Header title="My Task" date={now} />
       <TodoProvider>
         <TodoLists />
+        <AddTodoForm />
       </TodoProvider>
-      <AddTodoForm />
     </div>
   );
 };
