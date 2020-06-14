@@ -1,6 +1,6 @@
 import { TODO_CHECK, ADD_TODO } from "./constants";
 
-export const initialState = {
+const defaultState = {
   todos: [
     {
       task: "Buy a Shampoo",
@@ -16,6 +16,11 @@ export const initialState = {
     },
   ],
 };
+
+const getInitialState = () =>
+  JSON.parse(localStorage.getItem("todo")) || defaultState;
+
+export const initialState = getInitialState();
 
 const todoReducer = (state, { type, payload }) => {
   const todos = state.todos;
