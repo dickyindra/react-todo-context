@@ -1,5 +1,13 @@
 .add-todo-wrapper {
   width: 100%;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .add-todo-wrapper {
+    position: fixed;
+    bottom: 0;
+  }
 }
 
 .add-todo {
