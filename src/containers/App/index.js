@@ -1,11 +1,15 @@
 import React from "react";
+import dayjs from "dayjs";
 
 import "./style.css";
+import Header from "../../components/Header";
 
 const App = () => {
+  const now = dayjs().format("dddd DD MMMM");
+
   return (
     <div className="App">
-      <span>App</span>
+      <Header title="My Task" date={now} />
     </div>
   );
 };

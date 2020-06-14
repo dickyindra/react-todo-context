@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  height: 280px;
+
+  background-image: url("./background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+
+  color: #ffffff;
+}
+
+.header-gradient {
+  position: relative;
+  height: 100%;
+
+  background: rgba(142, 45, 226, 0.5);
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(142, 45, 226, 0.5),
+    rgba(74, 0, 224, 0.5)
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(142, 45, 226, 0.5),
+    rgba(74, 0, 224, 0.5)
+  );
+}
+
+.header-container {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.header-title {
+  font-size: 24px;
+}
