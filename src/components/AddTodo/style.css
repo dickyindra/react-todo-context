@@ -1,10 +1,5 @@
 .add-todo-wrapper {
-  position: absolute;
-
   width: 100%;
-
-  left: 0;
-  bottom: 0;
 }
 
 .add-todo {
