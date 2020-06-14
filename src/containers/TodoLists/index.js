@@ -4,6 +4,7 @@ import "./style.css";
 import TodoList from "../../components/TodoList";
 import { TodoContext } from "../App/provider";
 import { todoCheck, removeTodo } from "../App/actions";
+import noData from "./no-data.svg";
 
 const TodoLists = () => {
   const [{ todos }, dispatch] = useContext(TodoContext);
@@ -25,6 +26,17 @@ const TodoLists = () => {
       onRemove={() => handleRemove(index)}
     />
   ));
+
+  if (lists.length === 0) {
+    return (
+      <div className="todo-lists">
+        <div className="todo-empty">
+          <img src={noData} alt="No Data" />
+          <p>Empty Tasks :(</p>
+        </div>
+      </div>
+    );
+  }
 
   return <div className="todo-lists">{lists}</div>;
 };
