@@ -53,3 +53,7 @@
 .add-todo-button:not(:disabled):hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.add-todo-button:focus {
+  outline: none;
+}
