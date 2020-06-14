@@ -1,7 +1,13 @@
 import React from "react";
 
+import "./style.css";
+
 const App = () => {
-  return <p>App</p>;
+  return (
+    <div className="App">
+      <span>App</span>
+    </div>
+  );
 };
 
 export default App;
