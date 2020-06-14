@@ -1,0 +1,41 @@
+.todo-list {
+  padding: 15px 20px;
+
+  border-bottom: 1px solid #ddd;
+
+  display: flex;
+  align-items: center;
+}
+
+.todo-checklist {
+  width: 25px;
+  height: 25px;
+
+  border: 2px solid #ddd;
+  border-radius: 100%;
+
+  transition: 0.3s ease;
+}
+
+.todo-checklist:hover img {
+  opacity: 1;
+}
+
+.todo-checklist img {
+  transition: 0.1s ease;
+  opacity: 0;
+}
+
+.todo-checklist.checked {
+  background-color: #8e2de2;
+  border-color: #8e2de2;
+}
+
+.todo-checklist.checked img {
+  opacity: 1;
+  filter: brightness(3);
+}
+
+.todo-text {
+  margin-left: 15px;
+}
