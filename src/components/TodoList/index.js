@@ -3,6 +3,7 @@ import classNames from "classnames";
 
 import "./style.css";
 import check from "./check.svg";
+import trash from "./trash.svg";
 
 const TodoList = ({ task, checked: isCheck, setChecked }) => {
   return (
@@ -16,6 +17,11 @@ const TodoList = ({ task, checked: isCheck, setChecked }) => {
         </div>
       </div>
       <span className="todo-text">{task}</span>
+      <div>
+        <div className="todo-remove" onClick={setChecked}>
+          <img src={trash} alt="remove" />
+        </div>
+      </div>
     </div>
   );
 };

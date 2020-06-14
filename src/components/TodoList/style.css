@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.todo-list:hover .todo-remove {
+  opacity: 1;
+}
+
 .todo-checklist {
   width: 25px;
   height: 25px;
@@ -37,5 +41,35 @@
 }
 
 .todo-text {
+  width: 100%;
   margin-left: 15px;
+}
+
+.todo-remove {
+  opacity: 0;
+
+  width: 25px;
+  height: 25px;
+
+  border: 1px solid #ddd;
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.1s ease;
+}
+
+.todo-remove:hover {
+  border-color: #ff0756;
+  background-color: #ff0756;
+}
+
+.todo-remove img {
+  width: 15px;
+}
+
+.todo-remove:hover img {
+  filter: brightness(3);
 }
