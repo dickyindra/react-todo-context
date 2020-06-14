@@ -4,6 +4,7 @@ import dayjs from "dayjs";
 import "./style.css";
 import Header from "../../components/Header";
 import TodoLists from "../TodoLists";
+import AddTodoForm from "../AddTodoForm";
 
 const App = () => {
   const now = dayjs().format("dddd DD MMMM");
@@ -12,6 +13,7 @@ const App = () => {
     <div className="App">
       <Header title="My Task" date={now} />
       <TodoLists />
+      <AddTodoForm />
     </div>
   );
 };

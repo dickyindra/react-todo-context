@@ -9,6 +9,8 @@ body {
 }
 
 .App {
+  position: relative;
+
   max-width: 480px;
   min-height: calc(100vh - 100px);
 
