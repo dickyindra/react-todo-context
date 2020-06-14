@@ -24,3 +24,15 @@ body {
 
   overflow: hidden;
 }
+
+@media screen and (max-width: 768px) {
+  .App {
+    max-width: none;
+    height: 100vh;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    border-radius: 0px;
+  }
+}
