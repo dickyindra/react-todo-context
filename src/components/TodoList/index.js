@@ -5,7 +5,7 @@ import "./style.css";
 import check from "./check.svg";
 import trash from "./trash.svg";
 
-const TodoList = ({ task, checked: isCheck, setChecked }) => {
+const TodoList = ({ task, checked: isCheck, setChecked, onRemove }) => {
   return (
     <div className="todo-list">
       <div>
@@ -18,7 +18,7 @@ const TodoList = ({ task, checked: isCheck, setChecked }) => {
       </div>
       <span className="todo-text">{task}</span>
       <div>
-        <div className="todo-remove" onClick={setChecked}>
+        <div className="todo-remove" onClick={onRemove}>
           <img src={trash} alt="remove" />
         </div>
       </div>

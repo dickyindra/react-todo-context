@@ -3,17 +3,26 @@ import React, { useContext } from "react";
 import "./style.css";
 import TodoList from "../../components/TodoList";
 import { TodoContext } from "../App/provider";
-import { todoCheck } from "../App/actions";
+import { todoCheck, removeTodo } from "../App/actions";
 
 const TodoLists = () => {
   const [{ todos }, dispatch] = useContext(TodoContext);
+
+  const handleCheck = (index) => {
+    dispatch(todoCheck(index));
+  };
+
+  const handleRemove = (index) => {
+    dispatch(removeTodo(index));
+  };
 
   const lists = todos.map(({ task, checked }, index) => (
     <TodoList
       key={index}
       task={task}
       checked={checked}
-      setChecked={() => dispatch(todoCheck(index))}
+      setChecked={() => handleCheck(index)}
+      onRemove={() => handleRemove(index)}
     />
   ));
 

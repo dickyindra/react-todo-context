@@ -1,4 +1,4 @@
-import { TODO_CHECK, ADD_TODO } from "./constants";
+import { TODO_CHECK, ADD_TODO, REMOVE_TODO } from "./constants";
 
 const defaultState = {
   todos: [
@@ -23,7 +23,7 @@ const getInitialState = () =>
 export const initialState = getInitialState();
 
 const todoReducer = (state, { type, payload }) => {
-  const todos = state.todos;
+  const todos = [...state.todos];
 
   switch (type) {
     case ADD_TODO:
@@ -39,6 +39,13 @@ const todoReducer = (state, { type, payload }) => {
 
     case TODO_CHECK:
       todos[payload.id].checked = true;
+
+      return {
+        ...state,
+        todos,
+      };
+    case REMOVE_TODO:
+      todos.splice(payload.id, 1);
 
       return {
         ...state,
