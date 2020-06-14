@@ -1,5 +1,18 @@
 export const initialState = {
-  todos: ["Buy a Shampoo", "Update blog", "Finish a Task"],
+  todos: [
+    {
+      task: "Buy a Shampoo",
+      checked: true,
+    },
+    {
+      task: "Update blog",
+      checked: false,
+    },
+    {
+      task: "Finish a Task",
+      checked: false,
+    },
+  ],
 };
 
 const todoReducer = (state, { type }) => {
