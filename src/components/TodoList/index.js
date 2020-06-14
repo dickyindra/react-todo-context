@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import classNames from "classnames";
 
 import "./style.css";
@@ -20,4 +20,4 @@ const TodoList = ({ task, checked: isCheck, setChecked }) => {
   );
 };
 
-export default TodoList;
+export default memo(TodoList);
