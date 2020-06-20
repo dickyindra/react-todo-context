@@ -2,7 +2,11 @@
 
 A react todo app created using context api.
 
-![Screenshot React Todo Context App](https://raw.githubusercontent.com/dickyindra/react-todo-context/master/screenshot.png)
+![Screenshot React Todo Context App](https://raw.githubusercontent.com/dickyindra/react-todo-context/master/example.png)
+
+## Demo
+
+Website: [https://dickyindra-react-todo-context.netlify.app/](https://dickyindra-react-todo-context.netlify.app/)
 
 ## Installation
 
