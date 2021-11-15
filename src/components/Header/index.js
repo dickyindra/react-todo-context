@@ -1,4 +1,5 @@
 import React from "react";
+import { isMobile } from "react-device-detect"
 
 import "./style.css";
 
@@ -9,6 +10,7 @@ const Header = ({ title, date }) => {
         <div className="header-container">
           <div className="header-title">{title}</div>
           <div className="header-date">{date}</div>
+          {isMobile && <span>Is Mobile</span>}
         </div>
       </div>
     </div>
