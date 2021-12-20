@@ -17,5 +17,5 @@ jobs:
       - name: Push to dokku
         uses: dokku/github-action@master
         with:
-          git_remote_url: 'ssh://dokku@dickyindra.com/react-todo-context'
+          git_remote_url: 'ssh://dokku@45.76.188.162/~/react-todo-context'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
