@@ -31,7 +31,7 @@ const TodoLists = () => {
     return (
       <div className="todo-lists">
         <div className="todo-empty">
-          <img src={noData} alt="No Data" />
+          <img src={noData} alt="Empty Tasks" />
           <p>Empty Tasks :(</p>
         </div>
       </div>

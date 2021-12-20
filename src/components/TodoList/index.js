@@ -13,13 +13,13 @@ const TodoList = ({ task, checked: isCheck, setChecked, onRemove }) => {
           className={classNames("todo-checklist", { checked: isCheck })}
           onClick={setChecked}
         >
-          <img src={check} alt="check" />
+          <img src={check} alt="Check Todo" />
         </div>
       </div>
       <span className="todo-text">{task}</span>
       <div>
         <div className="todo-remove" onClick={onRemove}>
-          <img src={trash} alt="remove" />
+          <img src={trash} alt="Remove Todo" />
         </div>
       </div>
     </div>
