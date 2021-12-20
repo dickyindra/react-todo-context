@@ -23,7 +23,7 @@ const AddTodo = ({ value, setValue, onSubmit }) => {
         />
         <div>
           <button className="add-todo-button" disabled={isButtonDisable}>
-            <img src={plus} alt="plus" />
+            <img src={plus} alt="Add Todo" />
           </button>
         </div>
       </form>
